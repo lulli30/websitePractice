@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Help me improve my Website 
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name:  <input id="name" type="text" placeholder="Name" required></label>
+        <label id="email-label">Email: <input id="email" type="email" placeholder="Email" required></label>
+        <label id="number-label">Age: <input id="number" type="number" min="8" max="120" placeholder="Age" required></label>
+        <label>Am I Good?</label>
+        <select id="dropdown">
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+        <label>Are you single? 
+          <label> <input type="radio" name="name" class="inline" value="yes">Yes</label>
+          <label> <input type="radio" name="name" class="inline" value="no">No</label>
+        </label>
+        <label> What Programing Langguage do you Know?
+        </label>
+        <label>
+          <input type="checkbox" class="inline" value="python"> Python <br>
+          <input type="checkbox" class="inline" value="java"> Java <br>
+          <input type="checkbox" class="inline" value="php"> PHP
+        </label>
+        <label>Provide a comment about me:
+          <textarea rows="3" cols="30" placeholder="You suck..."></textarea>
+        </label>
+        <input type="submit" id="submit" value="Submit">
+      </fieldset>
+    </form>
+  </body>
+</html>
